@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prismenbrille bei Doppelbildern | Wirkung und Sehsimulation</title>
+<meta name="description" content="Wie hilft eine Prismenbrille bei Doppelbildern? Vergleichen Sie in der Sehsimulation drei Stufen: ohne Brille, mit normaler Brille und mit Prismenbrille.">
+<link rel="preload" href="road.webp" as="image">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<header><a class="brand" href="#">Prismenbrille.de</a><nav aria-label="Hauptnavigation"><a href="#wirkung">So wirken Prismen</a><a class="nav-action" href="#simulation">Simulation starten</a></nav></header>
+<main class="content">
+<section class="intro" aria-labelledby="title">
+<h1 id="title">Prismenbrillen<br>bei Doppelbildern</h1>
+<p>Wie verändert eine Prismenbrille das Sehen? Wählen Sie eine Szene und vergleichen Sie das Sehen ohne Brille, mit normaler Brille und mit Prismenbrille.</p>
+</section>
+<section id="simulation" class="sim" aria-label="Sehsimulation">
+<div class="toolbar">
+<div class="scenes" role="group" aria-label="Szene wählen">
+<button class="scene" type="button" data-scene="road" aria-pressed="true">Straßenverkehr</button>
+<button class="scene" type="button" data-scene="forest" aria-pressed="false">Herbstwald</button>
+<button class="scene" type="button" data-scene="desk" aria-pressed="false">Schreibtisch</button>
+</div>
+<fieldset class="vision-options">
+<legend>Sehstufe</legend>
+<label><input type="radio" name="vision" value="bare" checked><span>1. Ohne Brille</span></label>
+<label><input type="radio" name="vision" value="normal"><span>2. Normale Brille</span></label>
+<label><input type="radio" name="vision" value="prism"><span>3. Prismenbrille</span></label>
+</fieldset>
+</div>
+<div id="stage" class="stage" data-scene="road" data-vision="bare">
+<div id="scene-view" class="scene-view" data-vision="bare" aria-hidden="true">
+<div class="photo base"></div><div class="photo double"></div>
+<div class="photo peripheral"></div><div class="photo peripheral-double"></div>
+</div>
+<div class="badge"><i aria-hidden="true"></i><span id="mode" aria-live="polite">Unscharf mit Doppelbild</span></div>
+<div id="glasses" class="glasses" tabindex="0" role="group" aria-label="Verschiebbare Brille" aria-describedby="drag-help" data-vision="bare">
+<div class="lens left" aria-hidden="true"><div class="photo base"></div><div class="photo double"></div><div class="photo peripheral"></div><div class="photo peripheral-double"></div></div>
+<span class="bridge" aria-hidden="true"></span>
+<div class="lens right" aria-hidden="true"><div class="photo base"></div><div class="photo double"></div><div class="photo peripheral"></div><div class="photo peripheral-double"></div></div>
+<span class="hinge hinge-left" aria-hidden="true"></span>
+<span class="hinge hinge-right" aria-hidden="true"></span>
+</div>
+<div class="scene-name" id="scene-name">Straße bei Dämmerung</div>
+</div>
+<div class="sim-footer">
+<p id="vision-description">Die Bildmitte ist etwas deutlicher. Zum Rand hin werden die Konturen weicher und stärker versetzt.</p>
+<div class="sim-actions">
+<button type="button" id="focus-view" aria-pressed="false" hidden>Stark konzentrieren</button>
+<button type="button" id="lens-view" aria-pressed="true">Brille ausblenden</button>
+<button type="button" id="reset">Brille zentrieren</button>
+</div>
+<p id="drag-help">Ziehen Sie die Brille oder bewegen Sie sie mit den Pfeiltasten.</p>
+</div>
+</section>
+<section id="wirkung" class="explain">
+<h2>Warum Prismen helfen können</h2>
+<div class="explain-copy">
+<h3>Bildschärfe und Zusammenspiel der Augen</h3>
+<p>Eine gewöhnliche Brille gleicht zum Beispiel Kurz- oder Weitsichtigkeit aus. Bei manchen Menschen bleibt trotz scharf eingestellter Einzelbilder ein zweites, versetztes Bild sichtbar. Prismen lenken das Licht um und verschieben die wahrgenommene Bildposition. Eine passende Korrektur kann es dem Gehirn erleichtern, beide Bilder zu einem einzigen zusammenzuführen. Sehschärfe und Prismenkorrektur lassen sich im selben Glas kombinieren.</p>
+<h3>Was bedeutet Winkelfehlsichtigkeit?</h3>
+<p>Bei einer Heterophorie kann eine leichte Abweichung der Augenstellung sichtbar werden, wenn das Zusammenspiel beider Augen unterbrochen wird. Viele Menschen gleichen sie beim beidäugigen Sehen aus. Ermüdung beim Lesen oder Kopfschmerzen können verschiedene Ursachen haben. Eine fachliche Untersuchung klärt, ob die Augenstellung zu den Beschwerden beiträgt.</p>
+<h3>Wie wird eine Prismenbrille angepasst?</h3>
+<p>Die Untersuchung ermittelt, ob eine prismatische Korrektur hilft und welche Stärke und Richtung geeignet sind. Prismen können ins Brillenglas eingearbeitet oder zum Erproben als Fresnel-Folie aufgebracht werden. Die Folie lässt sich leicht wechseln, kann das Bild aber etwas unschärfer machen. Bei anhaltenden Beschwerden mit einer neuen Brille ist eine Nachkontrolle sinnvoll.</p>
+<p>Die drei Sehstufen zeigen einen Beispielfall, in dem Unschärfe und Doppelbilder zusammen auftreten. Die Wahrnehmung und die Wirkung der Korrektur sind individuell.</p>
+<p><strong>Plötzlich neu auftretende Doppelbilder</strong> sollten Sie sofort medizinisch abklären lassen.</p>
+<p class="sources">Weiterlesen · <a href="https://www.qs-optiker.de/prismenbrille">QS-Optiker</a> · <a href="https://www.apollo.de/ratgeber/brillen/prismenbrillen">Apollo</a> · <a href="https://www.brille24.de/ratgeber/augenoptik/winkelfehlsichtigkeit">Brille24</a> · <a href="https://aapos.org/glossary/prisms">AAPOS</a> · <a href="https://www.nhs.uk/symptoms/double-vision/">NHS</a></p>
+</div>
+</section>
+</main>
+<footer><span>Prismenbrille.de</span><span>Fotos von Unsplash · <a href="https://images.unsplash.com/photo-1468510634867-6747418867dc">Straßenverkehr</a> · <a href="https://unsplash.com/photos/a-path-through-an-orange-forest-in-autumn-SyQaW-rl-8k">Herbstwald</a> · <a href="https://unsplash.com/photos/turned-on-black-flat-screen-monitor-with-keyboard-LER4ZTsGWSI">Schreibtisch</a></span></footer>
+</body>
+</html>
